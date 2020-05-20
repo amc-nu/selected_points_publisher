@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(selected_points_publisher)
 find_package(catkin REQUIRED COMPONENTS rviz)
-catkin_package()
+
+catkin_package(CATKIN_DEPENDS roscpp nodelet rviz)
 
 include_directories(include ${catkin_INCLUDE_DIRS})
 link_directories(${catkin_LIBRARY_DIRS})
